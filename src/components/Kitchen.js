@@ -6,8 +6,8 @@ export default function Kitchen() {
     
     return (
         <div>
-            <Oven />
-            <Sink />
+            <span className = 'oven'><Oven /></span>
+            <span className = 'sink'><Sink /></span>
             kitchen
             
             

@@ -12,12 +12,12 @@ const Baths = {bathNum1: 'FullBath', bathNum2: 'HalfBath'}
         <div className = 'floorPlan'>
 
             <span className = 'Bedroom1'><Bedroom Bedrooms = {Bedrooms.bedNum1} /></span>
-            <Kitchen />
-            <LivingRoom />
+            <span className = 'Kitchen'><Kitchen /></span>
+            <span className = 'LivingRoom'><LivingRoom /></span>
             <span className = 'Bedroom2'><Bedroom Bedrooms = {Bedrooms.bedNum2} /></span>
             <span className = 'Bedroom3'><Bedroom Bedrooms = {Bedrooms.bedNum3} /></span>
-            <Bath Baths = {Baths.bathNum1} />
-            <Bath Baths = {Baths.bathNum2} />
+            <span className = 'fullBath'><Bath Baths = {Baths.bathNum1} /></span>
+            <span className = 'halfBath'><Bath Baths = {Baths.bathNum2} /></span>
 
             
            

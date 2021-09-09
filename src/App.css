@@ -1,13 +1,63 @@
-div {
 
-    border: 1px solid grey;
-
-    margin: 5px;
-
-    padding: 5px;
-
-    }
 
 .floorPlan {
+    padding: 1%;
+    text-align: center;
+    color: white;
+    margin: auto;
+    height: 80vh;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5fr 1fr 10fr 15fr;
+    grid-template-areas: 
+    "Bedroom1 LivingRoom LivingRoom Kitchen Kitchen"
+    "Bedroom1 LivingRoom LivingRoom Kitchen Kitchen"
+    "FullBath LivingRoom LivingRoom Kitchen Kitchen"
+    "Bedroom2 HalfBath Bedroom3 Bedroom3 Bedroom3 ";
+
+    
+}
+.Bedroom1 {
     background-color: blue;
+    grid-area: Bedroom1;
+}
+.Bedroom2 {
+    background-color: blue;
+    grid-area: Bedroom2;
+}
+.Bedroom3 {
+    background-color: blue;
+    grid-area: Bedroom3;
+}
+.Kitchen {
+    grid-area: Kitchen;
+  background-color: #F1A73B;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas: 
+  "Oven Sink"
+  ". .";
+  
+}
+.sink {
+    background-color: brown;
+    grid-area: Sink;
+}
+.oven {
+    background-color: red;
+    grid-area: Oven;
+}
+.LivingRoom {
+    background-color: peachpuff;
+    grid-area: LivingRoom;
+}
+.fullBath {
+    background-color: green;
+    grid-area: FullBath;
+}
+.halfBath {
+    background-color: green;
+    grid-area: HalfBath;
 }
